@@ -15,10 +15,10 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
-''' #u'1f3f4_e0067_e0062_e0077_e006c_e0073_e007f'''
+
 #U+1F3F4
 
-token = '568588485:AAF8SMWkM3snf7gRZnIzY2jh77ZTEI232NA'
+token = 'telegram_chatbot_token_here'
 update_id = None
 
 
@@ -84,9 +84,11 @@ def WriteToQuoterSheet(quote,author,category):
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
     # The ID and range of a sample spreadsheet.
-    # SAMPLE_SPREADSHEET_ID_Google = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms'
-    SAMPLE_SPREADSHEET_ID = '1omT0mse1YMgIChm2rwsKEoP-_upuzZ0GGQ-25a-wG_E'
+    
+    SAMPLE_SPREADSHEET_ID = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms'
+    # sample spreadsheet id , present in the google spreadsheet url
     SAMPLE_RANGE_NAME = 'Sheet1!A2:D'
+    #column names from where to fetch the data
 
 
     """Shows basic usage of the Sheets API.
@@ -129,6 +131,7 @@ def WriteToQuoterSheet(quote,author,category):
         'values': valuesInput
     }
     range_name = 'Sheet1!A2:D'
+    #column names where to write the data
     value_input_option = 'RAW'
     # result = service.spreadsheets().values().update(
     #     spreadsheetId=SAMPLE_SPREADSHEET_ID, range=range_name,
