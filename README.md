@@ -20,3 +20,4 @@ This is a feeder service and I have designed an android app which uses this spre
 
 
 Before we start with the google spreadsheet as database, we have to make the spreadhseet public and publish it, or use the OAuth token to fetch the data from the spreadsheet in a client app, an android app in this case.
+Follow this link for more details https://support.wix.com/en/article/setting-your-google-spreadsheet-as-public 
