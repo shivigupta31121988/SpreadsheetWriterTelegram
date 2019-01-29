@@ -18,3 +18,5 @@ https://developers.google.com/sheets/api/guides/values
 
 This is a feeder service and I have designed an android app which uses this spreadsheet to show quotes . Please refer to the play store link: https://play.google.com/store/apps/details?id=hungrybaba.quoter2
 
+
+Before we start with the google spreadsheet as database, we have to make the spreadhseet public and publish it, or use the OAuth token to fetch the data from the spreadsheet in a client app, an android app in this case.
